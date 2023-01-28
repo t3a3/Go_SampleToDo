@@ -1,0 +1,142 @@
+2023/01/26 22:00:16 main.go:15: test
+2023/01/26 23:03:29 users.go:33: sql: converting argument $1 type: unsupported type func() uuid.UUID, a func
+2023/01/26 23:04:05 users.go:33: table users has no column named password
+2023/01/26 23:09:17 users.go:33: table users has no column named password
+2023/01/26 23:13:42 users.go:33: table users has no column named password
+2023/01/27 22:10:33 todos.go:19: no such table: todo
+2023/01/27 22:12:43 todos.go:19: no such table: todo
+2023/01/27 22:13:58 todos.go:19: no such table: todo
+2023/01/27 22:25:17 todos.go:47: sql: expected 3 destination arguments in Scan, not 4
+2023/01/27 23:34:39 server.go:3230: http: panic serving [::1]:51798: open app/views/tamplates/layout.html: The system cannot find the path specified.
+goroutine 18 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1850 +0xbf
+panic({0x7ff7ee5d2a20, 0xc00007f650})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x262
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+ToDo_app/app/controllers.generateHTML({0x7ff7ee6b6d08?, 0xc000156000}, {0x7ff7ee5b0820, 0x7ff7ee6b2ed8}, {0xc000067a20?, 0x2, 0x0?})
+	C:/Users/kazuk/go/src/ToDo_app/app/controllers/server.go:15 +0x106
+ToDo_app/app/controllers.Top({0x7ff7ee6b6d08?, 0xc000156000?}, 0x7ff7ee20e59a?)
+	C:/Users/kazuk/go/src/ToDo_app/app/controllers/route_main.go:8 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc000067af0?, {0x7ff7ee6b6d08?, 0xc000156000?}, 0x0?)
+	C:/Program Files/Go/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x7ff7ee6b6d08, 0xc000156000}, 0xc000144100)
+	C:/Program Files/Go/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc00007f530?}, {0x7ff7ee6b6d08, 0xc000156000}, 0xc000144100)
+	C:/Program Files/Go/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0000a8000, {0x7ff7ee6b71e0, 0xc00008c0f0})
+	C:/Program Files/Go/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3102 +0x4db
+2023/01/27 23:34:40 server.go:3230: http: panic serving [::1]:51799: open app/views/tamplates/layout.html: The system cannot find the path specified.
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1850 +0xbf
+panic({0x7ff7ee5d2a20, 0xc00007f740})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x262
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+ToDo_app/app/controllers.generateHTML({0x7ff7ee6b6d08?, 0xc0001560e0}, {0x7ff7ee5b0820, 0x7ff7ee6b2ed8}, {0xc000193a20?, 0x2, 0x0?})
+	C:/Users/kazuk/go/src/ToDo_app/app/controllers/server.go:15 +0x106
+ToDo_app/app/controllers.Top({0x7ff7ee6b6d08?, 0xc0001560e0?}, 0x7ff7ee20e59a?)
+	C:/Users/kazuk/go/src/ToDo_app/app/controllers/route_main.go:8 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc000193af0?, {0x7ff7ee6b6d08?, 0xc0001560e0?}, 0x0?)
+	C:/Program Files/Go/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x7ff7ee6b6d08, 0xc0001560e0}, 0xc00020c000)
+	C:/Program Files/Go/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc000202030?}, {0x7ff7ee6b6d08, 0xc0001560e0}, 0xc00020c000)
+	C:/Program Files/Go/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc000188000, {0x7ff7ee6b71e0, 0xc00008c0f0})
+	C:/Program Files/Go/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3102 +0x4db
+2023/01/27 23:34:40 server.go:3230: http: panic serving [::1]:51800: open app/views/tamplates/layout.html: The system cannot find the path specified.
+goroutine 35 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1850 +0xbf
+panic({0x7ff7ee5d2a20, 0xc00007f860})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x262
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+ToDo_app/app/controllers.generateHTML({0x7ff7ee6b6d08?, 0xc0001561c0}, {0x7ff7ee5b0820, 0x7ff7ee6b2ed8}, {0xc000195a20?, 0x2, 0x0?})
+	C:/Users/kazuk/go/src/ToDo_app/app/controllers/server.go:15 +0x106
+ToDo_app/app/controllers.Top({0x7ff7ee6b6d08?, 0xc0001561c0?}, 0x7ff7ee20e59a?)
+	C:/Users/kazuk/go/src/ToDo_app/app/controllers/route_main.go:8 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc000195af0?, {0x7ff7ee6b6d08?, 0xc0001561c0?}, 0x0?)
+	C:/Program Files/Go/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x7ff7ee6b6d08, 0xc0001561c0}, 0xc00020c100)
+	C:/Program Files/Go/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002020c0?}, {0x7ff7ee6b6d08, 0xc0001561c0}, 0xc00020c100)
+	C:/Program Files/Go/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0001880a0, {0x7ff7ee6b71e0, 0xc00008c0f0})
+	C:/Program Files/Go/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3102 +0x4db
+2023/01/27 23:34:40 server.go:3230: http: panic serving [::1]:51801: open app/views/tamplates/layout.html: The system cannot find the path specified.
+goroutine 10 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1850 +0xbf
+panic({0x7ff7ee5d2a20, 0xc0002021e0})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x262
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+ToDo_app/app/controllers.generateHTML({0x7ff7ee6b6d08?, 0xc000222000}, {0x7ff7ee5b0820, 0x7ff7ee6b2ed8}, {0xc000195a20?, 0x2, 0x0?})
+	C:/Users/kazuk/go/src/ToDo_app/app/controllers/server.go:15 +0x106
+ToDo_app/app/controllers.Top({0x7ff7ee6b6d08?, 0xc000222000?}, 0x7ff7ee20e59a?)
+	C:/Users/kazuk/go/src/ToDo_app/app/controllers/route_main.go:8 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc000195af0?, {0x7ff7ee6b6d08?, 0xc000222000?}, 0x0?)
+	C:/Program Files/Go/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x7ff7ee6b6d08, 0xc000222000}, 0xc00020c200)
+	C:/Program Files/Go/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc000202120?}, {0x7ff7ee6b6d08, 0xc000222000}, 0xc00020c200)
+	C:/Program Files/Go/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0000010e0, {0x7ff7ee6b71e0, 0xc00008c0f0})
+	C:/Program Files/Go/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3102 +0x4db
+2023/01/27 23:34:42 server.go:3230: http: panic serving [::1]:51802: open app/views/tamplates/layout.html: The system cannot find the path specified.
+goroutine 11 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1850 +0xbf
+panic({0x7ff7ee5d2a20, 0xc00007f9e0})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x262
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+ToDo_app/app/controllers.generateHTML({0x7ff7ee6b6d08?, 0xc0001562a0}, {0x7ff7ee5b0820, 0x7ff7ee6b2ed8}, {0xc000191a20?, 0x2, 0x0?})
+	C:/Users/kazuk/go/src/ToDo_app/app/controllers/server.go:15 +0x106
+ToDo_app/app/controllers.Top({0x7ff7ee6b6d08?, 0xc0001562a0?}, 0x7ff7ee20e59a?)
+	C:/Users/kazuk/go/src/ToDo_app/app/controllers/route_main.go:8 +0x75
+net/http.HandlerFunc.ServeHTTP(0xc000191af0?, {0x7ff7ee6b6d08?, 0xc0001562a0?}, 0x0?)
+	C:/Program Files/Go/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x7ff7ee6b6d08, 0xc0001562a0}, 0xc00020c400)
+	C:/Program Files/Go/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc000202240?}, {0x7ff7ee6b6d08, 0xc0001562a0}, 0xc00020c400)
+	C:/Program Files/Go/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc000001180, {0x7ff7ee6b71e0, 0xc00008c0f0})
+	C:/Program Files/Go/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3102 +0x4db
+2023/01/28 14:01:46 route_auth.go:37: sql: Scan error on column index 5, name "created_at": unsupported Scan, storing driver.Value type string into type *time.Time
+2023/01/28 14:01:46 server.go:3230: http: superfluous response.WriteHeader call from ToDo_app/app/controllers.authenticate (route_auth.go:52)
+2023/01/28 14:19:18 route_auth.go:37: sql: Scan error on column index 5, name "created_at": unsupported Scan, storing driver.Value type string into type *time.Time
+2023/01/28 14:19:18 server.go:3230: http: superfluous response.WriteHeader call from ToDo_app/app/controllers.authenticate (route_auth.go:52)
+2023/01/28 14:36:15 route_auth.go:37: sql: Scan error on column index 5, name "created_at": unsupported Scan, storing driver.Value type string into type *time.Time
+2023/01/28 14:36:15 server.go:3230: http: superfluous response.WriteHeader call from ToDo_app/app/controllers.authenticate (route_auth.go:52)
+2023/01/28 14:42:48 route_auth.go:37: near "from": syntax error
+2023/01/28 14:42:48 server.go:3230: http: superfluous response.WriteHeader call from ToDo_app/app/controllers.authenticate (route_auth.go:54)
+2023/01/28 14:50:49 route_auth.go:37: near "?": syntax error
+2023/01/28 14:50:49 server.go:3230: http: superfluous response.WriteHeader call from ToDo_app/app/controllers.authenticate (route_auth.go:54)
+2023/01/28 14:51:30 route_auth.go:37: near "?": syntax error
+2023/01/28 14:51:30 server.go:3230: http: superfluous response.WriteHeader call from ToDo_app/app/controllers.authenticate (route_auth.go:54)
+2023/01/28 14:56:00 route_auth.go:37: sql: Scan error on column index 5, name "created_at": unsupported Scan, storing driver.Value type string into type *time.Time
+2023/01/28 14:56:00 server.go:3230: http: superfluous response.WriteHeader call from ToDo_app/app/controllers.authenticate (route_auth.go:52)
+2023/01/28 14:58:20 route_auth.go:37: sql: Scan error on column index 5, name "created_at": unsupported Scan, storing driver.Value type string into type *time.Time
+2023/01/28 14:58:20 server.go:3230: http: superfluous response.WriteHeader call from ToDo_app/app/controllers.authenticate (route_auth.go:52)
+2023/01/28 15:36:16 route_auth.go:48: sql: no rows in result set
+2023/01/28 15:36:16 server.go:3230: http: superfluous response.WriteHeader call from ToDo_app/app/controllers.authenticate (route_auth.go:65)
+2023/01/28 15:38:41 route_main.go:26: http: named cookie not present
+2023/01/28 15:52:57 users.go:140: 
+2023/01/28 15:53:31 users.go:140: 
+2023/01/28 15:58:05 users.go:140: 
+2023/01/28 15:58:42 users.go:140: 
